@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mi-prueba-svc
+  name: helloworld-svc
 spec:
   ports:
   - port: 80
