@@ -4,7 +4,7 @@ metadata:
   name: helloworld
   namespace: mi-prueba
 spec:
-  replicas: 2
+  replicas: 3
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -15,7 +15,7 @@ spec:
         app: helloworld
     spec:
       containers:
-      - image: adejonge/helloworld:latest
+      - image: harbor.itsos.ar/library/hello-world-web:latest
         name: helloworld
         ports:
         - containerPort: 8080
